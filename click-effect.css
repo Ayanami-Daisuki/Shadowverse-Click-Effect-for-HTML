@@ -1,6 +1,7 @@
 :root {
     --click-effect-main-color: yellow;
     --click-effect-shadow-color: gold;
+    --click-effect-dot-color: white;
 }
 
 .ClickEffect {
@@ -26,7 +27,7 @@
     position: inherit;
     top: 50%;
     left: 50%;
-    color: var(--click-effect-main-color);
+    color: var(--click-effect-dot-color);
     box-shadow: 0;
     transition: all 1s ease;
     user-select: none;
