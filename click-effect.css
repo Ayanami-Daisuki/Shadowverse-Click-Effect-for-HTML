@@ -1,0 +1,45 @@
+:root {
+    --click-effect-main-color: yellow;
+    --click-effect-shadow-color: gold;
+}
+
+.ClickEffect {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-items: center;
+    background-color: transparent;
+    border: solid 1px var(--click-effect-main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px var(--click-effect-shadow-color), 0 0 5px 2px var(--click-effect-shadow-color) inset;
+    width: 0;
+    height: 0;
+    transition-property: opacity;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.Dot {
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    color: var(--click-effect-main-color);
+    box-shadow: 0;
+    transition: all 1s ease;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.Stick {
+    height: 1px;
+    position: inherit;
+    background-image: linear-gradient(to right, transparent, transparent, transparent, var(--click-effect-shadow-color), var(--click-effect-main-color), transparent);
+    z-index: 1000;
+    user-select: none;
+    transition: opacity 0.15s linear;
+    pointer-events: none;
+}
