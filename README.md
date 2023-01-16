@@ -1,4 +1,4 @@
-# <p align="center">![示例](/asset/1.webp)<br/>影之诗点击特效 For 网页</span>
+# <p align="center"><br/>影之诗点击特效 For 网页</span>
 
 ## 简述
 
